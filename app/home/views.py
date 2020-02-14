@@ -31,6 +31,11 @@ def change_filename(filename):
     return filename
 
 
+@home.route('/',methods=["GET"])
+def index_no_page():
+    return redirect(url_for("home.index",page=1))
+
+
 @home.route('/<int:page>/', methods=["GET"])
 def index(page=None):
     tags = Tag.query.all()

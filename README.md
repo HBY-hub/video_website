@@ -6,3 +6,4 @@
 /app/static 为乱七八糟静态资源  
 /app/template 为html模板文件  
 /app/models.py 为数据模型  
+
